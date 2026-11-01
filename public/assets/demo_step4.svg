@@ -1,0 +1,23 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 800 450" width="100%" height="100%">
+  <rect width="800" height="450" fill="#0F172A"/>
+  <rect x="0" y="0" width="800" height="36" fill="#1E293B"/>
+  <circle cx="20" cy="18" r="6" fill="#EF4444"/>
+  <circle cx="38" cy="18" r="6" fill="#F59E0B"/>
+  <circle cx="56" cy="18" r="6" fill="#10B981"/>
+  <rect x="90" y="8" width="500" height="20" rx="4" fill="#0F172A"/>
+  <text x="105" y="22" fill="#94A3B8" font-family="sans-serif" font-size="11">Handover Studio Demonstration • Qualtrics XM</text>
+  <rect x="20" y="56" width="760" height="370" rx="8" fill="#FFFFFF"/>
+  <rect x="20" y="56" width="760" height="50" rx="8" fill="#3B82F6"/>
+  <text x="45" y="87" fill="#FFFFFF" font-family="sans-serif" font-size="16" font-weight="bold">Step 4: Inspect Response Quality & Distribution</text>
+  <text x="45" y="135" fill="#0F172A" font-family="sans-serif" font-size="16" font-weight="bold">Data & Analysis Tab Review</text>
+  
+  <rect x="45" y="160" width="710" height="230" rx="6" fill="#F8FAFC" stroke="#CBD5E1"/>
+  <rect x="45" y="160" width="710" height="36" fill="#E2E8F0"/>
+  <text x="60" y="184" fill="#334155" font-family="sans-serif" font-size="12" font-weight="bold">Response ID | Recorded Date | Finished | Progress | Duration (s) | Q1_CSAT | DistributionChannel</text>
+  <text x="60" y="220" fill="#0F172A" font-family="sans-serif" font-size="12">R_3jK9qL18v2 | 2026-10-31 08:12:44 | 1 | 100% | 240 | 5 | email</text>
+  <text x="60" y="250" fill="#0F172A" font-family="sans-serif" font-size="12">R_1pM4zX92a1 | 2026-10-31 08:44:19 | 1 | 100% | 185 | 4 | email</text>
+  <text x="60" y="280" fill="#0F172A" font-family="sans-serif" font-size="12">R_8vT2wB55e7 | 2026-10-31 09:05:02 | 1 | 100% | 310 | 5 | anonymous</text>
+  <rect x="60" y="320" width="400" height="40" rx="6" fill="#DCFCE7" stroke="#16A34A"/>
+  <text x="75" y="345" fill="#14532D" font-family="sans-serif" font-size="12" font-weight="bold">✓ Data Quality Verified: No test prefixes in first sample</text>
+  
+</svg>

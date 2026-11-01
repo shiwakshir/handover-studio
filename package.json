@@ -1,0 +1,13 @@
+{
+  "name": "handover-studio",
+  "version": "1.0.0",
+  "description": "An intelligent, autonomous, multimodal AI handover platform.",
+  "main": "server.js",
+  "scripts": {
+    "start": "agy-node server.js",
+    "test": "agy-node test.js"
+  },
+  "author": "Handover Studio AI Architects",
+  "license": "UNLICENSED",
+  "private": true
+}
