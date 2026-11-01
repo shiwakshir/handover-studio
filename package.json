@@ -4,8 +4,8 @@
   "description": "An intelligent, autonomous, multimodal AI handover platform.",
   "main": "server.js",
   "scripts": {
-    "start": "node server.js",
-    "test": "node test.js"
+    "start": "node --experimental-sqlite server.js",
+    "test": "node --experimental-sqlite test.js"
   },
   "engines": {
     "node": ">=22.5.0"
