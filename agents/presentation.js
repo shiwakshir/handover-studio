@@ -14,7 +14,7 @@ function generatePresentationPptxBuffer(workflow) {
   // Slide 1: Title Slide
   ppt.addSlide({
     title: workflow.title || 'Handover Walkthrough',
-    subtitle: `Task Owner: ${workflow.owner || 'Sarah Jenkins'} | Version: ${workflow.version || 'v1.0'}`
+    subtitle: `Task Owner: ${workflow.owner || 'Sarah Jenkins'} | Role: ${workflow.targetRole || 'Covering Colleague'}`
   });
 
   // Slide 2: Workflow Overview & Objectives

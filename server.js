@@ -153,7 +153,7 @@ const server = http.createServer(async (req, res) => {
             severity: 'warning',
             handoverId: h.id,
             handoverTitle: h.title,
-            title: `${h.pendingQuestions} workflow step${h.pendingQuestions > 1 ? 's' : ''} require clarification`,
+            title: `${h.pendingQuestions} workflow step${h.pendingQuestions > 1 ? 's require' : ' requires'} clarification`,
             description: `Agent 4 identified missing decision rules or validation checks in "${h.title}".`,
             actionLabel: 'Answer Questions',
             targetView: 'review',

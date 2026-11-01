@@ -29,7 +29,6 @@ function generateSopHtml(workflow) {
         <div class="mt-4 flex flex-wrap gap-4 text-sm text-slate-600">
           <div><strong class="text-slate-800">Task Owner:</strong> ${workflow.owner || 'Sarah Jenkins'}</div>
           <div><strong class="text-slate-800">Target Role:</strong> ${workflow.targetRole || 'Covering Colleague'}</div>
-          <div><strong class="text-slate-800">Version:</strong> ${workflow.version || 'v1.0'}</div>
           <div><strong class="text-slate-800">Last Reviewed:</strong> ${new Date().toLocaleDateString()}</div>
         </div>
       </header>
@@ -164,7 +163,7 @@ function generateSopDocxBuffer(workflow) {
   });
 
   doc.addTitle(workflow.title || 'Standard Operating Procedure');
-  doc.addHeading2(`Task Owner: ${workflow.owner || 'Sarah Jenkins'} | Version: ${workflow.version || 'v1.0'}`);
+  doc.addHeading2(`Task Owner: ${workflow.owner || 'Sarah Jenkins'} | Role: ${workflow.targetRole || 'Covering Colleague'}`);
   doc.addParagraph(`Generated automatically by Handover Studio from verified demonstration and employee-confirmed rules.`);
 
   // 1. Purpose
