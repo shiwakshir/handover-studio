@@ -2318,7 +2318,7 @@ class App {
         <td style="padding:12px; color:var(--text-secondary);">${h.target_role}</td>
         <td style="padding:12px;"><span class="badge ${h.status === 'approved' ? 'badge-confirmed' : 'badge-observed'}">${h.status}</span></td>
         <td style="padding:12px; color:#10B981; font-weight:700;">${h.readiness_score}%</td>
-        <td style="padding:12px; font-family:monospace; color:#A78BFA;">${h.version}</td>
+        <td style="padding:12px; font-family:monospace; color:#A78BFA;">Verified</td>
         <td style="padding:12px;">
           <button class="btn btn-secondary btn-sm" onclick="event.stopPropagation(); app.selectHandover('${h.id}')">Open</button>
         </td>

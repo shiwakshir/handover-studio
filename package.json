@@ -4,8 +4,11 @@
   "description": "An intelligent, autonomous, multimodal AI handover platform.",
   "main": "server.js",
   "scripts": {
-    "start": "agy-node server.js",
-    "test": "agy-node test.js"
+    "start": "node server.js",
+    "test": "node test.js"
+  },
+  "engines": {
+    "node": ">=22.5.0"
   },
   "author": "Handover Studio AI Architects",
   "license": "UNLICENSED",

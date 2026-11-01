@@ -16,7 +16,7 @@ db.exec(`
     status TEXT DEFAULT 'draft',
     confidence_score INTEGER DEFAULT 92,
     readiness_score INTEGER DEFAULT 88,
-    version TEXT DEFAULT 'v1.0',
+    version TEXT DEFAULT 'Verified',
     tags TEXT DEFAULT '[]',
     metadata TEXT DEFAULT '{}',
     workflow TEXT DEFAULT '{}',
@@ -342,7 +342,7 @@ function seedDemonstrationScenario() {
     'approved',
     96,
     92,
-    'v1.0',
+    'Verified',
     JSON.stringify(['Market Research', 'Qualtrics', 'Data Delivery', 'Weekly', 'Operations']),
     JSON.stringify({ apps: demoWorkflow.applications, prereqs: demoWorkflow.prerequisites }),
     JSON.stringify(demoWorkflow),
@@ -437,7 +437,7 @@ function seedDemonstrationScenario() {
   auditInsert.run('log-1', demoHandoverId, 'RECORDING_COMPLETED', 'Sarah Jenkins', 'Screen recording captured (duration: 03:42, source: Display 1)', now);
   auditInsert.run('log-2', demoHandoverId, 'WORKFLOW_RECONSTRUCTED', 'AI Pipeline (Agents 1-4)', '10 steps identified, 3 clarification questions generated', now);
   auditInsert.run('log-3', demoHandoverId, 'QUESTIONS_ANSWERED', 'Sarah Jenkins', '3 knowledge gaps resolved and integrated into workflow model', now);
-  auditInsert.run('log-4', demoHandoverId, 'HANDOVER_APPROVED', 'Sarah Jenkins', 'Owner signed off on workflow v1.0 and published for covering team', now);
+  auditInsert.run('log-4', demoHandoverId, 'HANDOVER_APPROVED', 'Sarah Jenkins', 'Owner signed off on workflow and published for covering team', now);
   auditInsert.run('log-5', demoHandoverId, 'VERIFICATION_PRACTICE_COMPLETED', 'Alex Rivera', 'Practice walkthrough completed with 92% readiness score', now);
   }
 

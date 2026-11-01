@@ -361,7 +361,7 @@ const server = http.createServer(async (req, res) => {
         summary: body.summary || 'Recorded operational procedure awaiting AI reconstruction.',
         owner: body.owner || 'Task Owner',
         targetRole: body.targetRole || 'Covering Colleague',
-        version: 'v1.0',
+        version: 'Verified',
         applications: body.applications || ['Browser'],
         prerequisites: body.prerequisites || ['Active user login credentials'],
         steps: body.steps || []
@@ -382,7 +382,7 @@ const server = http.createServer(async (req, res) => {
         'draft',
         85,
         70,
-        'v1.0',
+        'Verified',
         JSON.stringify(body.tags || ['Operations']),
         JSON.stringify({ apps: initialWorkflow.applications }),
         JSON.stringify(initialWorkflow),
@@ -748,7 +748,7 @@ const server = http.createServer(async (req, res) => {
           status: r.status,
           readinessScore: r.readiness_score || 92,
           confidenceScore: r.confidence_score || 94,
-          version: r.version || 'v1.0',
+          version: r.version || 'Verified',
           tags: JSON.parse(r.tags || '[]'),
           applications: apps,
           stepsCount,
@@ -1018,7 +1018,7 @@ const server = http.createServer(async (req, res) => {
 });
 
 if (require.main === module) {
-  server.listen(PORT, () => {
+  server.listen(PORT, '0.0.0.0', () => {
     console.log(`=======================================================`);
     console.log(`  HANDOVER STUDIO SERVER RUNNING ON PORT ${PORT}`);
     console.log(`  Access URL: http://localhost:${PORT}`);
